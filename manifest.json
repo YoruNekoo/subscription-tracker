@@ -1,0 +1,18 @@
+{
+  "name": "SubTracker Pro",
+  "short_name": "SubTracker",
+  "description": "Premium offline-first subscription tracker and spending dashboard.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#7c3aed",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any maskable"
+    }
+  ]
+}
