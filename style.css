@@ -1397,3 +1397,221 @@ input:checked + .toggle-slider:before {
     padding: 24px 16px;
   }
 }
+
+@media (max-width: 768px) {
+  /* ===== DASHBOARD-ONLY mobile scaling =====
+     Constrain the dashboard to viewport width so the user
+     never has to pinch-zoom-out.  Other sections are left untouched. */
+
+  #section-dashboard {
+    font-size: 0.82rem;
+    overflow-x: hidden;       /* clip any accidental overflow */
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+
+  /* --- Metrics 2×2 compact grid --- */
+  #section-dashboard .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  #section-dashboard .metric-card {
+    padding: 12px;
+    min-height: auto;
+    border-radius: 14px;
+  }
+
+  #section-dashboard .metric-card:hover {
+    transform: none;  /* disable hover lift on touch */
+  }
+
+  #section-dashboard .metric-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.3px;
+  }
+
+  #section-dashboard .metric-value {
+    font-size: 1.2rem;
+    word-break: break-all;      /* prevents long Rp values from overflowing */
+    overflow-wrap: anywhere;
+    line-height: 1.2;
+  }
+
+  #section-dashboard .metric-value.small-text {
+    font-size: 0.9rem;
+  }
+
+  #section-dashboard .metric-value-container {
+    margin-top: 8px;
+    margin-bottom: 4px;
+  }
+
+  #section-dashboard .metric-icon-wrapper {
+    width: 26px;
+    height: 26px;
+    border-radius: 8px;
+  }
+
+  #section-dashboard .metric-icon-wrapper svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  #section-dashboard .metric-footer {
+    font-size: 0.65rem;
+  }
+
+  /* --- Visuals (charts) --- */
+  #section-dashboard .visuals-grid {
+    grid-template-columns: 1fr;   /* stack charts vertically */
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+
+  #section-dashboard .visual-card {
+    padding: 14px;
+    border-radius: 14px;
+  }
+
+  #section-dashboard .visual-card:hover {
+    transform: none;
+  }
+
+  #section-dashboard .visual-card-title {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+  }
+
+  /* Doughnut chart + legend */
+  #section-dashboard .custom-chart-layout {
+    flex-direction: row;
+    gap: 12px;
+    min-height: auto;
+    align-items: center;
+  }
+
+  #section-dashboard .svg-chart-box {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+  }
+
+  #section-dashboard .chart-legend {
+    gap: 5px;
+    min-width: 0;     /* allow legend to shrink */
+  }
+
+  #section-dashboard .legend-item {
+    font-size: 0.7rem;
+    gap: 4px;
+  }
+
+  #section-dashboard .legend-color-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  #section-dashboard .legend-val {
+    font-size: 0.7rem;
+    white-space: nowrap;
+  }
+
+  /* Timeline bars */
+  #section-dashboard .timeline-bars {
+    gap: 8px;
+  }
+
+  #section-dashboard .timeline-row {
+    gap: 6px;
+  }
+
+  #section-dashboard .timeline-date-label {
+    width: 52px;
+    font-size: 0.65rem;
+  }
+
+  #section-dashboard .timeline-progress-track {
+    height: 18px;
+    border-radius: 4px;
+  }
+
+  #section-dashboard .timeline-label-inside,
+  #section-dashboard .timeline-cost-inside {
+    font-size: 0.6rem;
+  }
+
+  /* --- Upcoming Renewals Table --- */
+  #section-dashboard .upcoming-renewals-card {
+    padding: 14px;
+    border-radius: 14px;
+  }
+
+  #section-dashboard .upcoming-renewals-card:hover {
+    transform: none;
+  }
+
+  #section-dashboard .card-header-with-action {
+    margin-bottom: 12px;
+  }
+
+  /* Force table into a contained scroll box */
+  #section-dashboard .table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+  }
+
+  #section-dashboard .renewals-table {
+    min-width: 480px;  /* allow horizontal scroll inside contained box */
+  }
+
+  #section-dashboard .renewals-table th {
+    padding: 6px 8px;
+    font-size: 0.62rem;
+    white-space: nowrap;
+  }
+
+  #section-dashboard .renewals-table td {
+    padding: 8px;
+    font-size: 0.72rem;
+  }
+
+  #section-dashboard .cell-sub-name-wrapper {
+    gap: 8px;
+  }
+
+  #section-dashboard .sub-avatar {
+    width: 22px;
+    height: 22px;
+    font-size: 0.65rem;
+    border-radius: 5px;
+  }
+
+  #section-dashboard .category-badge {
+    padding: 2px 5px;
+    font-size: 0.6rem;
+  }
+
+  #section-dashboard .days-left-badge {
+    padding: 2px 5px;
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 400px) {
+  /* Very narrow phones — shrink dashboard even further */
+  #section-dashboard .metric-value {
+    font-size: 1rem;
+  }
+
+  #section-dashboard .metric-value.small-text {
+    font-size: 0.8rem;
+  }
+
+  #section-dashboard .svg-chart-box {
+    width: 80px;
+    height: 80px;
+  }
+}
