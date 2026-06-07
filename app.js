@@ -212,6 +212,14 @@ function setupNavigation() {
     });
   });
 
+  // Mobile header settings button
+  const mobHeaderSettings = document.getElementById('mob-header-settings');
+  if (mobHeaderSettings) {
+    mobHeaderSettings.addEventListener('click', () => {
+      switchSection('settings');
+    });
+  }
+
   btnQuickAdd.addEventListener('click', () => {
     prepareForm();
     switchSection('add-new');

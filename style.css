@@ -284,6 +284,28 @@ body.dark-theme {
   color: white;
 }
 
+/* Mobile Settings Button in Header (Hidden on Desktop) */
+.mobile-settings-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  margin-right: 12px;
+  transition: var(--transition-smooth);
+}
+
+.mobile-settings-btn:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+}
+
+.mobile-settings-btn svg {
+  display: block;
+}
+
 /* Main Content Area */
 .main-content {
   flex: 1;
@@ -1385,6 +1407,12 @@ input:checked + .toggle-slider:before {
     display: flex; /* Show mobile bottom navigation */
   }
   
+  .mobile-settings-btn {
+    display: flex; /* Show settings button in mobile header */
+    align-items: center;
+    justify-content: center;
+  }
+  
   .main-content {
     margin-left: 0;
     padding: 16px;
@@ -1392,14 +1420,19 @@ input:checked + .toggle-slider:before {
   }
   
   .content-header {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
     gap: 12px;
     margin-bottom: 20px;
   }
   
+  .welcome-section {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  
   .header-actions {
-    width: 100%;
     display: flex;
     justify-content: flex-end;
   }
