@@ -1483,12 +1483,12 @@ input:checked + .toggle-slider:before {
   /* --- Metrics 2×2 compact grid --- */
   #section-dashboard .metrics-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
-    margin-bottom: 12px;
+    gap: 16px;
+    margin-bottom: 16px;
   }
 
   #section-dashboard .metric-card {
-    padding: 10px;
+    padding: 16px;
     min-height: auto;
     border-radius: 12px;
   }
@@ -1498,19 +1498,19 @@ input:checked + .toggle-slider:before {
   }
 
   #section-dashboard .metric-label {
-    font-size: 0.6rem;
+    font-size: 0.75rem;
     letter-spacing: 0.3px;
   }
 
   #section-dashboard .metric-value {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     word-break: break-all;      /* prevents long Rp values from overflowing */
     overflow-wrap: anywhere;
     line-height: 1.2;
   }
 
   #section-dashboard .metric-value.small-text {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
   }
 
   #section-dashboard .metric-value-container {
@@ -1519,14 +1519,14 @@ input:checked + .toggle-slider:before {
   }
 
   #section-dashboard .metric-icon-wrapper {
-    width: 24px;
-    height: 24px;
-    border-radius: 7px;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
   }
 
   #section-dashboard .metric-icon-wrapper svg {
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
   }
 
   #section-dashboard .metric-footer {
