@@ -840,6 +840,13 @@ body.dark-theme {
   gap: 20px;
 }
 
+@media (max-width: 768px) {
+  .subs-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
 .sub-card {
   padding: 24px;
   display: flex;
@@ -1264,8 +1271,11 @@ input:checked + .toggle-slider:before {
     display: none;
   }
   .header-action-btn {
-    padding: 10px;
+    padding: 12px;
     border-radius: 50%;
+    min-width: 44px;
+    min-height: 44px;
+    justify-content: center;
   }
 }
 
@@ -1377,12 +1387,21 @@ input:checked + .toggle-slider:before {
   
   .main-content {
     margin-left: 0;
-    padding: 20px;
+    padding: 16px;
     padding-bottom: 90px; /* Leave space for bottom nav bar */
   }
   
   .content-header {
-    margin-bottom: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .header-actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
   }
   
   .welcome-section h2 {
@@ -1395,6 +1414,16 @@ input:checked + .toggle-slider:before {
   
   .settings-card {
     padding: 24px 16px;
+  }
+  
+  /* Improve touch targets for mobile */
+  button, a, input, select, textarea {
+    min-height: 44px;
+  }
+  
+  /* Prevent zoom on double tap */
+  * {
+    touch-action: manipulation;
   }
 }
 
