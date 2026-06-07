@@ -640,7 +640,6 @@ function renderTimelineTimeline() {
         <div class="timeline-progress-track" onclick="editSub('${sub.id}')">
           <div class="timeline-progress-fill" style="width: ${remainingPercent}%; background: linear-gradient(90deg, ${sub.color || '#7c3aed'} 0%, rgba(255,255,255,0.1) 100%);">
             <span class="timeline-label-inside">${sub.name}</span>
-            <span class="timeline-cost-inside">${subSymbol}${sub.price.toFixed(2)}</span>
           </div>
         </div>
       </div>
