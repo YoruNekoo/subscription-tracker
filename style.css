@@ -1474,7 +1474,7 @@ input:checked + .toggle-slider:before {
      never has to pinch-zoom-out.  Other sections are left untouched. */
 
   #section-dashboard {
-    font-size: 0.82rem;
+    font-size: 0.75rem;
     overflow-x: hidden;       /* clip any accidental overflow */
     max-width: 100vw;
     box-sizing: border-box;
@@ -1483,14 +1483,14 @@ input:checked + .toggle-slider:before {
   /* --- Metrics 2×2 compact grid --- */
   #section-dashboard .metrics-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin-bottom: 16px;
+    gap: 8px;
+    margin-bottom: 12px;
   }
 
   #section-dashboard .metric-card {
-    padding: 12px;
+    padding: 10px;
     min-height: auto;
-    border-radius: 14px;
+    border-radius: 12px;
   }
 
   #section-dashboard .metric-card:hover {
@@ -1498,51 +1498,51 @@ input:checked + .toggle-slider:before {
   }
 
   #section-dashboard .metric-label {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     letter-spacing: 0.3px;
   }
 
   #section-dashboard .metric-value {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     word-break: break-all;      /* prevents long Rp values from overflowing */
     overflow-wrap: anywhere;
     line-height: 1.2;
   }
 
   #section-dashboard .metric-value.small-text {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   #section-dashboard .metric-value-container {
-    margin-top: 8px;
+    margin-top: 6px;
     margin-bottom: 4px;
   }
 
   #section-dashboard .metric-icon-wrapper {
-    width: 26px;
-    height: 26px;
-    border-radius: 8px;
+    width: 24px;
+    height: 24px;
+    border-radius: 7px;
   }
 
   #section-dashboard .metric-icon-wrapper svg {
-    width: 13px;
-    height: 13px;
+    width: 12px;
+    height: 12px;
   }
 
   #section-dashboard .metric-footer {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
   }
 
   /* --- Visuals (charts) --- */
   #section-dashboard .visuals-grid {
     grid-template-columns: 1fr;   /* stack charts vertically */
-    gap: 14px;
-    margin-bottom: 16px;
+    gap: 12px;
+    margin-bottom: 12px;
   }
 
   #section-dashboard .visual-card {
-    padding: 14px;
-    border-radius: 14px;
+    padding: 12px;
+    border-radius: 12px;
   }
 
   #section-dashboard .visual-card:hover {
@@ -1550,72 +1550,72 @@ input:checked + .toggle-slider:before {
   }
 
   #section-dashboard .visual-card-title {
-    font-size: 0.85rem;
-    margin-bottom: 10px;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
   }
 
   /* Doughnut chart + legend */
   #section-dashboard .custom-chart-layout {
     flex-direction: row;
-    gap: 12px;
+    gap: 10px;
     min-height: auto;
     align-items: center;
   }
 
   #section-dashboard .svg-chart-box {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     flex-shrink: 0;
   }
 
   #section-dashboard .chart-legend {
-    gap: 5px;
+    gap: 4px;
     min-width: 0;     /* allow legend to shrink */
   }
 
   #section-dashboard .legend-item {
-    font-size: 0.7rem;
-    gap: 4px;
+    font-size: 0.65rem;
+    gap: 3px;
   }
 
   #section-dashboard .legend-color-dot {
-    width: 8px;
-    height: 8px;
+    width: 7px;
+    height: 7px;
   }
 
   #section-dashboard .legend-val {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     white-space: nowrap;
   }
 
   /* Timeline bars */
   #section-dashboard .timeline-bars {
-    gap: 8px;
-  }
-
-  #section-dashboard .timeline-row {
     gap: 6px;
   }
 
+  #section-dashboard .timeline-row {
+    gap: 5px;
+  }
+
   #section-dashboard .timeline-date-label {
-    width: 52px;
-    font-size: 0.65rem;
+    width: 48px;
+    font-size: 0.6rem;
   }
 
   #section-dashboard .timeline-progress-track {
-    height: 18px;
+    height: 16px;
     border-radius: 4px;
   }
 
   #section-dashboard .timeline-label-inside,
   #section-dashboard .timeline-cost-inside {
-    font-size: 0.6rem;
+    font-size: 0.55rem;
   }
 
   /* --- Upcoming Renewals Table --- */
   #section-dashboard .upcoming-renewals-card {
-    padding: 14px;
-    border-radius: 14px;
+    padding: 12px;
+    border-radius: 12px;
   }
 
   #section-dashboard .upcoming-renewals-card:hover {
@@ -1623,7 +1623,7 @@ input:checked + .toggle-slider:before {
   }
 
   #section-dashboard .card-header-with-action {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   /* Force table into a contained scroll box */
@@ -1634,18 +1634,18 @@ input:checked + .toggle-slider:before {
   }
 
   #section-dashboard .renewals-table {
-    min-width: 480px;  /* allow horizontal scroll inside contained box */
+    min-width: 450px;  /* allow horizontal scroll inside contained box */
   }
 
   #section-dashboard .renewals-table th {
-    padding: 6px 8px;
-    font-size: 0.62rem;
+    padding: 5px 6px;
+    font-size: 0.6rem;
     white-space: nowrap;
   }
 
   #section-dashboard .renewals-table td {
-    padding: 8px;
-    font-size: 0.72rem;
+    padding: 6px;
+    font-size: 0.68rem;
   }
 
   #section-dashboard .cell-sub-name-wrapper {
