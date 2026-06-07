@@ -182,13 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Update live date display
 function initDate() {
-  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-  const today = new Date();
-  const formattedDate = today.toLocaleDateString('en-US', options);
-  liveDateEl.textContent = formattedDate;
-  if (dashboardDateEl) {
-    dashboardDateEl.textContent = formattedDate;
-  }
+  // Date display removed from UI
 }
 
 // Track offline/online network status
