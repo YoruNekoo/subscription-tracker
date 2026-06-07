@@ -119,6 +119,7 @@ const sections = document.querySelectorAll('.content-section');
 const navItems = document.querySelectorAll('.nav-item, .mobile-nav-item');
 const headerTitle = document.getElementById('header-title');
 const liveDateEl = document.getElementById('live-date');
+const dashboardDateEl = document.getElementById('dashboard-date-display');
 const networkStatusEl = document.getElementById('network-status');
 const globalAlertsEl = document.getElementById('global-alerts');
 
@@ -183,7 +184,11 @@ document.addEventListener('DOMContentLoaded', () => {
 function initDate() {
   const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
   const today = new Date();
-  liveDateEl.textContent = today.toLocaleDateString('en-US', options);
+  const formattedDate = today.toLocaleDateString('en-US', options);
+  liveDateEl.textContent = formattedDate;
+  if (dashboardDateEl) {
+    dashboardDateEl.textContent = formattedDate;
+  }
 }
 
 // Track offline/online network status

@@ -356,6 +356,13 @@ body.dark-theme {
    METRICS DASHBOARD
    ========================================== */
 
+.dashboard-header-date {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
 .metrics-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
